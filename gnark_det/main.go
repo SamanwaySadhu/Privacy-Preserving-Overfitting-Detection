@@ -12,7 +12,7 @@ import (
 
 const N = 20
 
-// Circuit: proves det(A) == DetClaim using Gaussian elimination (no row swaps)
+
 type Circuit struct {
 	A        [N][N]frontend.Variable `gnark:",public"`
 	DetClaim frontend.Variable        `gnark:",public"`
