@@ -1,0 +1,54 @@
+[lenet5] train benign/cal/0
+    trained seed=0 epochs=19 train_loss=0.280 train_acc=0.912
+C:\Privacy-Preserving-Overfitting-Detection\certification_experiments\common.py:303: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  return np.array([float(run_audit(model, p, X, y, s, cfg)) for s in seeds])
+   test_acc=0.421 gap(loss)=2.417  F median=0.540 [min 0.340, max 0.887]
+[lenet5] train benign/cal/1
+    trained seed=1 epochs=22 train_loss=0.274 train_acc=0.907
+   test_acc=0.433 gap(loss)=2.524  F median=0.581 [min 0.294, max 0.816]
+[lenet5] train benign/cal/2
+    trained seed=2 epochs=22 train_loss=0.282 train_acc=0.904
+   test_acc=0.426 gap(loss)=2.931  F median=0.556 [min 0.442, max 0.976]
+[lenet5] train benign/eval/0
+    trained seed=100 epochs=20 train_loss=0.230 train_acc=0.926
+   test_acc=0.437 gap(loss)=2.711  F median=0.669 [min 0.388, max 1.190]
+[lenet5] train benign/eval/1
+    trained seed=101 epochs=23 train_loss=0.270 train_acc=0.911
+   test_acc=0.415 gap(loss)=2.675  F median=0.596 [min 0.239, max 0.858]
+[lenet5] train benign/eval/2
+    trained seed=102 epochs=26 train_loss=0.290 train_acc=0.909
+   test_acc=0.415 gap(loss)=3.023  F median=0.575 [min 0.290, max 1.018]
+[lenet5] train faulty/cal/0
+    trained seed=1000 epochs=29 train_loss=0.304 train_acc=0.900
+   test_acc=0.316 gap(loss)=3.912  F median=0.364 [min 0.239, max 0.631]
+[lenet5] train faulty/cal/1
+    trained seed=1001 epochs=27 train_loss=0.275 train_acc=0.910
+   test_acc=0.324 gap(loss)=3.709  F median=0.414 [min 0.231, max 0.599]
+[lenet5] train faulty/cal/2
+    trained seed=1002 epochs=29 train_loss=0.315 train_acc=0.905
+   test_acc=0.316 gap(loss)=3.753  F median=0.412 [min 0.178, max 0.653]
+[lenet5] train faulty/eval/0
+    trained seed=1100 epochs=29 train_loss=0.307 train_acc=0.900
+   test_acc=0.317 gap(loss)=3.469  F median=0.367 [min 0.229, max 0.641]
+[lenet5] train faulty/eval/1
+    trained seed=1101 epochs=34 train_loss=0.256 train_acc=0.918
+   test_acc=0.303 gap(loss)=3.881  F median=0.323 [min 0.180, max 0.566]
+[lenet5] train faulty/eval/2
+    trained seed=1102 epochs=30 train_loss=0.272 train_acc=0.915
+   test_acc=0.316 gap(loss)=4.029  F median=0.358 [min 0.214, max 0.507]
+
+[lenet5] SUMMARY
+  tau: 0.7823010712862014
+  quantile: 0.95
+  cal_auc: 0.17666666666666667
+  eval_auc: 0.09172839506172839
+  cal_fpr: 0.05555555555555555
+  eval_fpr: 0.13333333333333333
+  eval_tpr: 0.0
+  faulty_pass_rate: 1.0
+  benign_pass_rate: 0.8666666666666667
+  F_benign_eval_median: 0.6013577580451965
+  F_faulty_eval_median: 0.3445126861333847
+  benign_eval_mean: {'train_acc': 0.9151666666666666, 'train_acc_true_labels': 0.9151666666666666, 'test_acc': 0.4221, 'test_loss': 3.0663584147135414, 'loss_gap': 2.802843430582682, 'acc_gap': 0.4930666666666666}
+  faulty_eval_mean: {'train_acc': 0.91125, 'train_acc_true_labels': 0.7501666666666665, 'test_acc': 0.31196666666666667, 'test_loss': 4.071454069010417, 'loss_gap': 3.7931623006184894, 'acc_gap': 0.4382}

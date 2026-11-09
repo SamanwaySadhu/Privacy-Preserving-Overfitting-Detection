@@ -1,0 +1,18 @@
+   benign_cal0: test_acc=0.855 loss_gap=0.158  F_log median=0.448  F_ratio median=6.73e-05
+   benign_cal1: test_acc=0.840 loss_gap=0.163  F_log median=0.458  F_ratio median=9.42e-05
+   benign_cal2: test_acc=0.849 loss_gap=0.171  F_log median=0.415  F_ratio median=7.18e-05
+   benign_eval0: test_acc=0.859 loss_gap=0.178  F_log median=0.403  F_ratio median=8.37e-05
+   benign_eval1: test_acc=0.846 loss_gap=0.161  F_log median=0.474  F_ratio median=6.85e-05
+   benign_eval2: test_acc=0.849 loss_gap=0.134  F_log median=0.381  F_ratio median=4.57e-05
+   faulty_cal0: test_acc=0.752 loss_gap=0.494  F_log median=0.327  F_ratio median=4.66e-04
+   faulty_cal1: test_acc=0.760 loss_gap=0.457  F_log median=0.329  F_ratio median=5.42e-04
+   faulty_cal2: test_acc=0.775 loss_gap=0.414  F_log median=0.407  F_ratio median=9.27e-04
+   faulty_eval0: test_acc=0.750 loss_gap=0.450  F_log median=0.307  F_ratio median=4.36e-04
+   faulty_eval1: test_acc=0.744 loss_gap=0.501  F_log median=0.307  F_ratio median=5.15e-04
+   faulty_eval2: test_acc=0.749 loss_gap=0.454  F_log median=0.342  F_ratio median=4.69e-04
+
+[simplecnn] SUMMARY
+  [log] tau=0.5795, quantile=0.95, cal_auc=0.2264, eval_auc=0.2149, cal_fpr=0.05556, eval_fpr=0.07778, eval_tpr=0, faulty_pass_rate=1, benign_pass_rate=0.9222, F_benign_eval_median=0.4075, F_faulty_eval_median=0.3189
+  [ratio] tau=0.0001491, quantile=0.95, cal_auc=0.9996, eval_auc=0.9999, cal_fpr=0.05556, eval_fpr=0.04444, eval_tpr=1, faulty_pass_rate=0, benign_pass_rate=0.9556, F_benign_eval_median=6.967e-05, F_faulty_eval_median=0.0004716
+  benign: {'train_acc': 0.9105833333333333, 'train_acc_true_labels': 0.9105833333333333, 'test_acc': 0.8511666666666665, 'test_loss': 0.43484104715983074, 'loss_gap': 0.15758025410970053, 'acc_gap': 0.05941666666666667} 
+  faulty: {'train_acc': 0.9090833333333334, 'train_acc_true_labels': 0.8404999999999999, 'test_acc': 0.7473333333333333, 'test_loss': 0.828312821451823, 'loss_gap': 0.468597624206543, 'acc_gap': 0.09316666666666662}

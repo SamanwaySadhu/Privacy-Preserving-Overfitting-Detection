@@ -1,0 +1,8 @@
+[resnet18] attacking faulty_eval0 (stat=ratio, tau=0.0227)
+C:\Privacy-Preserving-Overfitting-Detection\certification_experiments\common.py:306: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  return np.array([float(run_audit(model, p, X, y, s, cfg)) for s in seeds])
+   it    1  F=0.0116  fit=0.315  q=0.000  (171s)
+   it   10  F=0.0131  fit=0.334  q=0.653  (368s)
+   it   20  F=0.0098  fit=0.205  q=0.372  (559s)
+[resnet18/faulty_eval0] pass rate 20/20 -> 20/20 [0.8388698745050667, 1.0]; median F 0.00841 -> 0.00855; test acc 0.427 -> 0.425 (benign ref 0.544); damage retained 0.84; train acc(noisy labels) 0.909 -> 0.903

@@ -1,0 +1,30 @@
+[resnet18] train benign_cal0
+    trained seed=0 epochs=19 train_loss=0.203 train_acc=0.934
+   benign_cal0: test_acc=0.559 loss_gap=1.445  F_log median=0.545  F_ratio median=8.06e-03
+[resnet18] train benign_cal1
+    trained seed=1 epochs=24 train_loss=0.281 train_acc=0.906
+   benign_cal1: test_acc=0.525 loss_gap=1.998  F_log median=0.525  F_ratio median=1.76e-02
+[resnet18] train benign_eval0
+    trained seed=100 epochs=19 train_loss=0.239 train_acc=0.916
+   benign_eval0: test_acc=0.556 loss_gap=1.561  F_log median=0.632  F_ratio median=1.08e-02
+[resnet18] train benign_eval1
+    trained seed=101 epochs=25 train_loss=0.173 train_acc=0.944
+   benign_eval1: test_acc=0.531 loss_gap=1.833  F_log median=0.655  F_ratio median=1.59e-02
+[resnet18] train faulty_cal0
+    trained seed=1000 epochs=31 train_loss=0.209 train_acc=0.934
+   faulty_cal0: test_acc=0.412 loss_gap=2.223  F_log median=0.409  F_ratio median=8.07e-03
+[resnet18] train faulty_cal1
+    trained seed=1001 epochs=35 train_loss=0.120 train_acc=0.962
+   faulty_cal1: test_acc=0.422 loss_gap=2.754  F_log median=0.387  F_ratio median=8.71e-03
+[resnet18] train faulty_eval0
+    trained seed=1100 epochs=31 train_loss=0.279 train_acc=0.909
+   faulty_eval0: test_acc=0.427 loss_gap=2.377  F_log median=0.467  F_ratio median=9.28e-03
+[resnet18] train faulty_eval1
+    trained seed=1101 epochs=32 train_loss=0.279 train_acc=0.911
+   faulty_eval1: test_acc=0.379 loss_gap=3.089  F_log median=0.417  F_ratio median=1.26e-02
+
+[resnet18] SUMMARY
+  [log] tau=0.9102, quantile=0.95, cal_auc=0.1906, eval_auc=0.1394, cal_fpr=0.05, eval_fpr=0.075, eval_tpr=0, faulty_pass_rate=1, benign_pass_rate=0.925, F_benign_eval_median=0.6406, F_faulty_eval_median=0.4283
+  [ratio] tau=0.0227, quantile=0.95, cal_auc=0.3113, eval_auc=0.38, cal_fpr=0.05, eval_fpr=0.1, eval_tpr=0.025, faulty_pass_rate=0.975, benign_pass_rate=0.9, F_benign_eval_median=0.01196, F_faulty_eval_median=0.01157
+  benign: {'train_acc': 0.93025, 'train_acc_true_labels': 0.93025, 'test_acc': 0.54365, 'test_loss': 1.9031626831054687, 'loss_gap': 1.6972025199890137, 'acc_gap': 0.3866} 
+  faulty: {'train_acc': 0.90975, 'train_acc_true_labels': 0.7535000000000001, 'test_acc': 0.40305, 'test_loss': 3.012106433105469, 'loss_gap': 2.732937579345703, 'acc_gap': 0.35045000000000004}

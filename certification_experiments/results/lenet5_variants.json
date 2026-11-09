@@ -1,0 +1,37 @@
+{
+  "logratio_std (paper default)": {
+    "auc": 0.15694444444444444,
+    "benign_median": 0.563977797172929,
+    "faulty_median": 0.3573131085542909
+  },
+  "ratio_std (df.py FLAT2_OVER_LOSS_STD)": {
+    "auc": 0.2838888888888889,
+    "benign_median": 0.004124130639848648,
+    "faulty_median": 0.002284045276906636
+  },
+  "s_std (df.py FLAT_STD)": {
+    "auc": 0.8180555555555555,
+    "benign_median": 0.018113264356473785,
+    "faulty_median": 0.02976985361305791
+  },
+  "log_s2_std": {
+    "auc": 0.1802777777777778,
+    "benign_median": 1.0285231859672699,
+    "faulty_median": 0.6067336166073519
+  },
+  "mean_logratio (level)": {
+    "auc": 0.5080555555555556,
+    "benign_median": -5.115403514688008,
+    "faulty_median": -5.109680994526908
+  },
+  "mean_s (level)": {
+    "auc": 1.0,
+    "benign_median": 0.03915584297637649,
+    "faulty_median": 0.10104180382764943
+  },
+  "mean_loss (level)": {
+    "auc": 1.0,
+    "benign_median": 0.24982942789793017,
+    "faulty_median": 1.8356373116374016
+  }
+}

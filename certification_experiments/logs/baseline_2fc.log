@@ -1,0 +1,42 @@
+[2fc] train benign_cal0
+    trained seed=0 epochs=31 train_loss=0.237 train_acc=0.912
+   benign_cal0: test_acc=0.710 loss_gap=0.333  F_log median=0.459  F_ratio median=1.28e-04
+[2fc] train benign_cal1
+    trained seed=1 epochs=32 train_loss=0.236 train_acc=0.919
+   benign_cal1: test_acc=0.755 loss_gap=0.287  F_log median=0.366  F_ratio median=7.01e-05
+[2fc] train benign_cal2
+    trained seed=2 epochs=32 train_loss=0.213 train_acc=0.927
+   benign_cal2: test_acc=0.765 loss_gap=0.325  F_log median=0.377  F_ratio median=1.01e-04
+[2fc] train benign_eval0
+    trained seed=100 epochs=29 train_loss=0.257 train_acc=0.919
+   benign_eval0: test_acc=0.750 loss_gap=0.281  F_log median=0.488  F_ratio median=1.26e-04
+[2fc] train benign_eval1
+    trained seed=101 epochs=28 train_loss=0.271 train_acc=0.903
+   benign_eval1: test_acc=0.760 loss_gap=0.267  F_log median=0.438  F_ratio median=8.71e-05
+[2fc] train benign_eval2
+    trained seed=102 epochs=27 train_loss=0.265 train_acc=0.909
+   benign_eval2: test_acc=0.735 loss_gap=0.276  F_log median=0.405  F_ratio median=7.69e-05
+[2fc] train faulty_cal0
+    trained seed=1000 epochs=43 train_loss=0.251 train_acc=0.928
+   faulty_cal0: test_acc=0.595 loss_gap=0.528  F_log median=0.419  F_ratio median=2.82e-04
+[2fc] train faulty_cal1
+    trained seed=1001 epochs=40 train_loss=0.248 train_acc=0.925
+   faulty_cal1: test_acc=0.660 loss_gap=0.458  F_log median=0.431  F_ratio median=2.51e-04
+[2fc] train faulty_cal2
+    trained seed=1002 epochs=38 train_loss=0.302 train_acc=0.909
+   faulty_cal2: test_acc=0.675 loss_gap=0.345  F_log median=0.409  F_ratio median=1.73e-04
+[2fc] train faulty_eval0
+    trained seed=1100 epochs=39 train_loss=0.300 train_acc=0.902
+   faulty_eval0: test_acc=0.665 loss_gap=0.438  F_log median=0.447  F_ratio median=2.87e-04
+[2fc] train faulty_eval1
+    trained seed=1101 epochs=37 train_loss=0.277 train_acc=0.922
+   faulty_eval1: test_acc=0.655 loss_gap=0.413  F_log median=0.388  F_ratio median=1.89e-04
+[2fc] train faulty_eval2
+    trained seed=1102 epochs=35 train_loss=0.295 train_acc=0.905
+   faulty_eval2: test_acc=0.660 loss_gap=0.339  F_log median=0.350  F_ratio median=1.22e-04
+
+[2fc] SUMMARY
+  [log] tau=0.5842, quantile=0.95, cal_auc=0.5779, eval_auc=0.3962, cal_fpr=0.05556, eval_fpr=0.04444, eval_tpr=0, faulty_pass_rate=1, benign_pass_rate=0.9556, F_benign_eval_median=0.4378, F_faulty_eval_median=0.399
+  [ratio] tau=0.0001866, quantile=0.95, cal_auc=0.9278, eval_auc=0.8683, cal_fpr=0.05556, eval_fpr=0.01111, eval_tpr=0.5111, faulty_pass_rate=0.4889, benign_pass_rate=0.9889, F_benign_eval_median=9.204e-05, F_faulty_eval_median=0.0001915
+  benign: {'train_acc': 0.9104166666666668, 'train_acc_true_labels': 0.9104166666666668, 'test_acc': 0.7483333333333334, 'test_loss': 0.5384459431966145, 'loss_gap': 0.274473295211792, 'acc_gap': 0.16208333333333333} 
+  faulty: {'train_acc': 0.9093749999999999, 'train_acc_true_labels': 0.7895833333333333, 'test_acc': 0.66, 'test_loss': 0.687368278503418, 'loss_gap': 0.3967334874471029, 'acc_gap': 0.1295833333333333}
